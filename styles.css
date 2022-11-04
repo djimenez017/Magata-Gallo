@@ -26,6 +26,9 @@ main {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   padding: 20px;
   height: 6vh;
@@ -84,7 +87,7 @@ a:hover {
   justify-content: space-around;
   display: flex;
   width: 90%;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
 }
 
 .info-card-flip {
@@ -124,8 +127,19 @@ a:hover {
 
 .info-card-back {
   background-color: #2980b9;
-
   transform: rotateY(180deg);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent);
+  padding: 20px;
+  font-family: var(--header-font);
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 400px) {
