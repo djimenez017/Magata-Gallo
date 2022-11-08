@@ -18,12 +18,12 @@
 body {
   font-size: 18px;
   background: var(--white);
-  height: 100vh;
   overflow-x: hidden;
 }
 
 main {
   margin: 0 auto;
+  height: 100%;
 }
 
 header {
@@ -153,17 +153,22 @@ a:hover {
 
 footer {
   width: 100%;
+  box-sizing: border-box;
   background-color: red;
   color: white;
   text-align: center;
   margin-top: 10px;
-  display: flex;
   background: var(--black);
-  flex-direction: row;
+  position: absolute;
+  padding: 5px;
 }
+
 .copyright {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
 }
 
 .footer-logo {
@@ -188,10 +193,10 @@ footer {
 }
 
 .product-card {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   background-color: var(--white);
-  margin: 20px;
+  margin: 10px auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -224,11 +229,82 @@ footer {
   padding: 10px;
   width: 300px;
   color: var(--black);
+  font-size: 1.3em;
 }
 
 .product-cta a {
   color: var(--black);
-  font-size: 2.3em;
+}
+
+/* CONTACT */
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form-container img {
+  width: 350px;
+  height: auto;
+}
+
+form {
+  padding: 0 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.form-container label {
+  width: 100%;
+  font-family: var(--header-font);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-container select {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 5px;
+  background: var(--accent);
+  color: var(--white);
+}
+
+.form-text {
+  font-family: var(--header-font);
+}
+
+/* INFO */
+
+.about-text {
+  width: 90%;
+  margin: 0 auto;
+  height: 90vh;
+  padding: 40px;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-about {
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1600px) {
@@ -244,6 +320,10 @@ footer {
   .product-container {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .form-container {
+    width: 50%;
   }
 }
 
@@ -262,8 +342,14 @@ footer {
     width: 90%;
   }
 
-  footer {
+  .copyright {
     flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    width: 200px;
+    margin: 0 auto;
   }
 
   .nav-items {
@@ -271,7 +357,7 @@ footer {
     position: absolute;
     right: 0px;
     height: 20%;
-    top: 6vh;
+    top: 8vh;
     z-index: 10;
     flex-direction: column;
     justify-content: center;
@@ -309,5 +395,24 @@ footer {
   .product-card img {
     width: 300px;
     height: auto;
+  }
+
+  .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-container img {
+    display: none;
+  }
+
+  .about-text {
+    height: 100vh;
+  }
+
+  .about-img {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
   }
 }

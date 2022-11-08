@@ -22,10 +22,10 @@
           </a>
         </div>
         <ul class="nav-items">
-            <li><a href="/">Home</a></li>
-            <li><a href="/Products.html">Products</a></li>
-            <li><a href="/Contact.html">Contact</a></li>
-            <li><a href="/Info.html">Info</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/Products.html">Products</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
+          <li><a href="/Info.html">Info</a></li>
         </ul>
         <div class="hamburger-menu">
           <div class="line1 toggle"></div>
@@ -36,20 +36,50 @@
     </header>
 
     <main>
-      <h1>Contact</h1>
+      <h1 class="product-header">Contact</h1>
+      <div class="form-container">
+        <div class="contact-image">
+          <img src="./assets/contact.jpg" alt="Rings and more!">
+        </div>
+      <form>
+        <p class="form-text">Got questions let our team know, and we will be in touch with you!</p><br>
+        <label for="name"
+          >Full Name: <br />
+          <input type="text" id="form-name" /> </label
+        ><br />
+        <label for="email"
+          >Email Address: <br />
+          <input type="email" id="form-email" /> </label
+        ><br />
+        <label for="message"
+          >Message: <br />
+          <input type="text"
+        /></label><br>
+        <label for="options">Type of Ring: <br>
+        <select name="type-of-ring" id="ring-type">
+          <option value="engagment">Engagement</option>
+          <option value="wedding">Wedding</option>
+          <option value="anyOcassion">Any Occasion</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </main>
     <footer>
       <div class="copyright">
         <img
           src="./assets/Asset 3@3x.png"
           alt="Mangata & Gallo"
           class="footer-logo"
-        /><br /><br />
-        <p>
-          Mangata and Gallo is a jewelry store that specializes in special
-          occasions like engagements, weddings and anniversaries.
-        </p>
-        <br />
-        <p>©Mangata & Gallo <span id="year"> </span></p>
+        /><br />
+        <div class="footr-text">
+          <p>
+            Mangata and Gallo is a jewelry store that specializes in special
+            occasions like engagements, weddings and anniversaries.
+          </p>
+          <br />
+          <p>©Mangata & Gallo <span id="year"> </span></p>
+        </div>
       </div>
     </footer>
   </body>
